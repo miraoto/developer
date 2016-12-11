@@ -9,6 +9,7 @@ class <%= controller_class_name %>Controller < ApplicationController
   # GET <%= route_url %>
   def index
     # hogehoge
+    @fuga = 1
     @<%= plural_table_name %> = <%= orm_class.all(class_name) %>
   end
 
